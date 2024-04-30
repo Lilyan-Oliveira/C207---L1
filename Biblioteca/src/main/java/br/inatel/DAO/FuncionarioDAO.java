@@ -18,11 +18,11 @@ public class FuncionarioDAO extends ConnectionDAO{
         String sql = "INSERT INTO funcionarios (matriculaFuncionario, nomeFuncionario, enderecoFuncionario, telefoneFuncionario, emailFuncionario) values(?,?,?,?,?)";
         try {
             pst = con.prepareStatement(sql);
-            pst.setInt(1,funcionario.getMatriculaFuncionario());
-            pst.setString(2, funcionario.getNomeFuncionario());
-            pst.setString(3, funcionario.getEnderecoFuncionario());
-            pst.setString(4, funcionario.getTelefoneFuncionario());
-            pst.setString(5, funcionario.getEmailFuncionario());
+            pst.setInt(1,funcionario.getMatriculafuncionario());
+            pst.setString(2, funcionario.getNomefuncionario());
+            pst.setString(3, funcionario.getEnderecofuncionario());
+            pst.setString(4, funcionario.getTelefonefuncionario());
+            pst.setString(5, funcionario.getEmailfuncionario());
             pst.execute();
             sucesso = true;
         } catch (SQLException exc) {
@@ -40,13 +40,13 @@ public class FuncionarioDAO extends ConnectionDAO{
     }
 
     //UPDATE
-    public boolean updateFuncionarioNome(int matriculaFuncionario, String nomeFuncionario) {
+    public boolean updateFuncionarioNome(int matriculafuncionario, String nomefuncionario) {
         connectToDB();
         String sql = "UPDATE Funcionarios SET nomeFuncionario=? where matriculaFuncionario=?";
         try {
             pst = con.prepareStatement(sql);
-            pst.setString(1, nomeFuncionario);
-            pst.setInt(2, matriculaFuncionario);
+            pst.setString(1, nomefuncionario);
+            pst.setInt(2, matriculafuncionario);
             pst.execute();
             sucesso = true;
         } catch (SQLException ex) {
@@ -64,12 +64,12 @@ public class FuncionarioDAO extends ConnectionDAO{
     }
 
     //DELETE
-    public boolean deleteFuncionario(int matriculaFuncionario) {
+    public boolean deleteFuncionario(int matriculafuncionario) {
         connectToDB();
-        String sql = "DELETE FROM Funcionarios where matriculaFuncionario=?";
+        String sql = "DELETE FROM funcionarios where matriculafuncionario=?";
         try {
             pst = con.prepareStatement(sql);
-            pst.setInt(1, matriculaFuncionario);
+            pst.setInt(1, matriculafuncionario);
             pst.execute();
             sucesso = true;
         } catch (SQLException ex) {
@@ -90,7 +90,7 @@ public class FuncionarioDAO extends ConnectionDAO{
     public ArrayList<Funcionario> selectFuncionario() {
         ArrayList<Funcionario> funcionarios = new ArrayList<>();
         connectToDB();
-        String sql = "SELECT * FROM Funcionarios";
+        String sql = "SELECT * FROM funcionarios";
 
         try {
             st = con.createStatement();
@@ -100,13 +100,13 @@ public class FuncionarioDAO extends ConnectionDAO{
 
             while (rs.next()) {
 
-                Funcionario funcionarioAux = new Funcionario(rs.getInt("matricula"), rs.getString("nome"), rs.getString("endereço"), rs.getString("telefone"), rs.getString("email"));
+                Funcionario funcionarioAux = new Funcionario(rs.getInt("matriculafuncionario"), rs.getString("nomefuncionario"), rs.getString("enderecofuncionario"), rs.getString("telefonefuncionario"), rs.getString("emailfuncionario"));
 
-                System.out.println("matricula = " + funcionarioAux.getMatriculaFuncionario());
-                System.out.println("nome = " + funcionarioAux.getNomeFuncionario());
-                System.out.println("endereço = " + funcionarioAux.getEnderecoFuncionario());
-                System.out.println("telefone = " + funcionarioAux.getTelefoneFuncionario());
-                System.out.println("Email = " + funcionarioAux.getEmailFuncionario());
+                System.out.println("matricula = " + funcionarioAux.getMatriculafuncionario());
+                System.out.println("nome = " + funcionarioAux.getNomefuncionario());
+                System.out.println("endereço = " + funcionarioAux.getEnderecofuncionario());
+                System.out.println("telefone = " + funcionarioAux.getTelefonefuncionario());
+                System.out.println("email = " + funcionarioAux.getEmailfuncionario());
                 System.out.println("--------------------------------");
 
                 funcionarios.add(funcionarioAux);

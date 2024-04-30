@@ -2,38 +2,37 @@ package br.inatel.Model;
 
 public class Funcionario {
 
-    private int matriculaFuncionario;
-    private String nomeFuncionario;
-    private String enderecoFuncionario;
-    private String telefoneFuncionario;
-    private String emailFuncionario;
+    private int matriculafuncionario;
+    private String nomefuncionario;
+    private String enderecofuncionario;
+    private String telefonefuncionario;
+    private String emailfuncionario;
 
-    public Funcionario(int matriculaFuncionario, String nomeFuncionario, String enderecoFuncionario, String telefoneFuncionario, String emailFuncionario) {
-        this.matriculaFuncionario = matriculaFuncionario;
-        this.nomeFuncionario = nomeFuncionario;
-        this.enderecoFuncionario = enderecoFuncionario;
-        this.telefoneFuncionario = telefoneFuncionario;
-        this.emailFuncionario = emailFuncionario;
+    public Funcionario(int matriculafuncionario, String nomefuncionario, String enderecofuncionario, String telefonefuncionario, String emailfuncionario) {
+        this.matriculafuncionario = matriculafuncionario;
+        this.nomefuncionario = nomefuncionario;
+        this.enderecofuncionario = enderecofuncionario;
+        this.telefonefuncionario = telefonefuncionario;
+        this.emailfuncionario = emailfuncionario;
     }
 
-    public int getMatriculaFuncionario() {
-
-        return matriculaFuncionario;
+    public int getMatriculafuncionario() {
+        return matriculafuncionario;
     }
 
-    public String getNomeFuncionario() {
-        return nomeFuncionario;
+    public String getNomefuncionario() {
+        return nomefuncionario;
     }
 
-    public String getEnderecoFuncionario() {
-        return enderecoFuncionario;
+    public String getEnderecofuncionario() {
+        return enderecofuncionario;
     }
 
-    public String getTelefoneFuncionario() {
-        return telefoneFuncionario;
+    public String getTelefonefuncionario() {
+        return telefonefuncionario;
     }
 
-    public String getEmailFuncionario() {
-        return emailFuncionario;
+    public String getEmailfuncionario() {
+        return emailfuncionario;
     }
 }
