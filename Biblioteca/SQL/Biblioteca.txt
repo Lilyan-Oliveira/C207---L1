@@ -1,0 +1,50 @@
+Banco de Dados (C207L1) e Programação orientada a objetos (C206L2)
+Lilyan - 301
+
+Resumo do Projeto: Sistema de Gerenciamento de Bibliotecas
+
+Descrição do Projeto:
+O projeto "Sistema de Gerenciamento de Bibliotecas" tem como objetivo desenvolver um sistema robusto e eficiente para gerenciar uma biblioteca, utilizando tecnologias SQL e Java. 
+O sistema permitirá o gerenciamento completo de livros, funcionários, leitores, empréstimos e reservas, garantindo a organização e a eficiência das operações da biblioteca.
+
+Funcionalidades Principais:
+
+Cadastro de novos livros com informações detalhadas (título, autor, editora, ISBN, categoria).
+Atualização e exclusão de registros de livros.
+Cadastro de funcionários.
+Atualização e exclusão de registros de funcionários.
+Cadastro de novos leitores com informações pessoais e de contato.
+Atualização e exclusão de registros de leitores.
+Histórico de empréstimos e reservas dos leitores.
+Registro de novos empréstimos de livros aos leitores.
+Controle de datas de empréstimo.
+Reserva de livros pelos leitores.
+
+Banco de Dados SQL: Utilizado para armazenar e gerenciar todas as informações relacionadas aos livros, funcionários, leitores, empréstimos e reservas. As tabelas do banco de dados serão 
+projetadas para garantir integridade referencial e eficiência nas consultas.
+
+Java: Utilizado para desenvolver a aplicação. A aplicação Java se conectará ao banco de dados SQL para realizar operações de CRUD (Create, Read, Update, Delete) e implementar a lógica 
+de negócios necessária para o funcionamento do sistema.
+
+Benefícios do Sistema:
+
+Eficiência Operacional: Automatização de processos manuais, reduzindo erros e aumentando a produtividade.
+Organização: Centralização de todas as informações da biblioteca em um único sistema.
+Acessibilidade: Facilidade de acesso às informações por funcionários e leitores autorizados.
+Controle: Melhor gestão de empréstimos e reservas.
+Conclusão:
+O "Sistema de Gerenciamento de Bibliotecas" é uma solução completa para a administração de bibliotecas, oferecendo funcionalidades abrangentes para o gerenciamento eficiente de livros, 
+funcionários, leitores, empréstimos e reservas.
+
+OBS:
+Algumas funções ainda não foram implementadas, estão apenas com um pintln;
+Para inserir um novo livro, deve-se colocar uma editora já existente. Caso não, vai ser gerado uma exceção. No desenvolvimento do projeto, notei que não faria muito sentido ter essa 
+tabela, mas era tarde demais para removê-la.
+
+Vídeos:
+Ideia e teste:
+https://www.youtube.com/watch?v=bjHAENBgGd4
+
+Código:
+https://www.youtube.com/watch?v=O1amj-HCZ7Y
+
